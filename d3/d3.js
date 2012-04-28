@@ -21,7 +21,8 @@ function brushstart(){
 function brushmove(){
 	var e = d3.event.target.extent();
 	circle.classed("selected",function(d){
-		return e[0][0] <= d[0]&&d[0]<=e[1][0]&&e[0][1]<=d[1]&&d[1]<=e[1][1];
+		var selected = e[0][0] <= d[0]&&d[0]<=e[1][0]&&e[0][1]<=d[1]&&d[1]<=e[1][1];//add selected class type onto each circle in e.extent
+		if(selected){alert(d);return true;}
 	});
 }
 function brushend(){

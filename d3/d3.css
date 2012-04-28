@@ -5,7 +5,7 @@ circle{
 	-webkit-transition:fill-opacity 250ms linear;
 }
 .selecting circle{
-	fill-opacity:.2;
+	fill-opacity:.3;
 }
 .selecting circle.selected{
 	stroke:#f00;
